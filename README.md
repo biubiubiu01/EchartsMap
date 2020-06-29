@@ -3,6 +3,8 @@
 > 使用echarts+Amap 获取行政区边界的geoJson
 前提准备：首先你要去高德api上申请密钥，免费的，一天可以发出5000次请求，次数太多了你要去花钱申请企业版，直通车：[https://developer.amap.com/](https://developer.amap.com/)
 
+> 地址预览：[https://biubiubiu01.github.io/EchartsMap/dist/#/](https://biubiubiu01.github.io/EchartsMap/dist/#/)
+
 渲染步骤主要分为：
 
 1. 根据行政区code去获取行政区边界geoJson
@@ -43,4 +45,7 @@
 --npm run dev
 
 
+掘金:[https://juejin.im/user/5d6cc5b56fb9a06acf2b747f](https://juejin.im/user/5d6cc5b56fb9a06acf2b747f)
+
+echarts社区：[https://gallery.echartsjs.com/explore.html?u=bd-4240785066&type=work#sort=rank~timeframe=all~author=all](https://gallery.echartsjs.com/explore.html?u=bd-4240785066&type=work#sort=rank~timeframe=all~author=all)
 
