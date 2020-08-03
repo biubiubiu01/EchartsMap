@@ -4,9 +4,6 @@ const path = require('path')
 const config = require('../vue.config')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')     //清除dist
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")   //提取css
-const HappyPack = require('happypack')     //单进程转多进程
-const os = require('os')
-const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length })
 const HardSourceWebpackPlugin = require('hard-source-webpack-plugin')    //缓存第三方模块
 const optimizeCss = require('optimize-css-assets-webpack-plugin');
 
@@ -42,12 +39,6 @@ const prodConfig = merge(webpackConfig, {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: ['happypack/loader?id=happyBabel'],
-        exclude: /node_modules/,
-        include: [resolve('src'), resolve('node_modules/webpack-dev-server/client')]
-      },
-      {
         test: /\.css$/,
         use: [
           {
@@ -75,11 +66,6 @@ const prodConfig = merge(webpackConfig, {
     new MiniCssExtractPlugin({
       filename: 'css/[name].[hash].css',
       chunkFilename: 'css/[name].[hash].css',
-    }),
-    new HappyPack({
-      id: 'happyBabel',
-      loaders: ['babel-loader?cacheDirectory'],
-      threadPool: happyThreadPool
     }),
     new HardSourceWebpackPlugin(),
     new optimizeCss({

@@ -11,7 +11,7 @@
         <p class="name" :class="item.type==currenIndex?'active':''">{{item.name}}</p>
       </div>
     </div>
-    <component :is="currenIndex" />
+    <component :is="currenIndex" v-cloak />
   </div>
 </template>
 
@@ -29,19 +29,19 @@ export default {
         {
           type: 'sctterMap',
           name: '分布图',
-          index: 1
+          index: 1,
         },
         {
           type: 'dotMap',
           name: '散点图',
-          index: 2
+          index: 2,
         },
         {
           type: 'heatMap',
           name: '热力图',
-          index: 3
-        }
-      ]
+          index: 3,
+        },
+      ],
     }
   },
   mounted() {},
@@ -51,8 +51,8 @@ export default {
         return
       }
       this.currenIndex = val.type
-    }
-  }
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>

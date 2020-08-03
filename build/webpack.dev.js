@@ -31,10 +31,6 @@ const devConfig = merge(webpackConfig, {
   module: {
     rules: [
       {
-        test: /\.js$/,
-        use: ['babel-loader']
-      },
-      {
         test: /\.css$/,
         use: ['vue-style-loader', 'css-loader', 'postcss-loader'],
       },
@@ -47,8 +43,6 @@ const devConfig = merge(webpackConfig, {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NamedModulesPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
   ]
 })
 
