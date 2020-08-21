@@ -8,8 +8,10 @@
 
 <script>
 import echarts from 'echarts'
+import resize from './mixins/resize'
 export default {
   name: 'sctterMap',
+  mixins: [resize],
   data() {
     return {
       myCharts: null,
@@ -74,13 +76,10 @@ export default {
     },
     initEcharts() {
       this.myChart = echarts.init(this.$refs.sctterMap)
-      window.addEventListener('resize', () => {
-        this.myChart.resize()
-      })
       echarts.registerMap('Map', this.geoJsonData) //注册
       this.myChart.setOption(
         {
-          backgroundColor: '#050038',
+          backgroundColor: '#013954',
           tooltip: {
             trigger: 'item',
             formatter: (p) => {
