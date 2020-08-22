@@ -1,4 +1,6 @@
-import { debounce } from "@/utils/index.js"
+import {
+  debounce
+} from "@/utils/index.js"
 
 export default {
   data() {
@@ -9,11 +11,10 @@ export default {
   },
   mounted() {
     this.resizeHandler = debounce(() => {
-      // if(this.myChart){
-      //   this.myChart.resize()
-      // }
-      console.log(123456);
-    }, 500)
+      if (this.myChart) {
+        this.myChart.resize()
+      }
+    }, 200)
     this.initResizeEvent();
   },
 
