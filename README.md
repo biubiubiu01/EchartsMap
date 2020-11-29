@@ -5,6 +5,8 @@
 
 > 地址预览：[https://gist006.gitee.io/echartsmap/#/](https://gist006.gitee.io/echartsmap/#/)
 
+> vue-antd-admin后台管理系统，有兴趣可以看看：[vue-antd-admin](https://github.com/biubiubiu01/vue-antd-admin)
+
 渲染步骤主要分为：
 
 1. 根据行政区code去获取行政区边界geoJson
