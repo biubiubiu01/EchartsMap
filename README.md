@@ -1,6 +1,3 @@
-## 最新
-由于高德api不让使用了，要求除非能提供公益证明，不然都看做商用，所以目前地图模板暂时不能使用，正在解决中...
-
 # EchartsMap
 
 > 使用echarts+Amap 获取行政区边界的geoJson
@@ -52,5 +49,9 @@
 
 掘金:[https://juejin.im/user/5d6cc5b56fb9a06acf2b747f](https://juejin.im/user/5d6cc5b56fb9a06acf2b747f)
 
-echarts社区：[https://gallery.echartsjs.com/explore.html?u=bd-4240785066&type=work#sort=rank~timeframe=all~author=all](https://gallery.echartsjs.com/explore.html?u=bd-4240785066&type=work#sort=rank~timeframe=all~author=all)
+## 捐赠
+
+开源不易，若觉得这个项目对你有用，可以点个[star](https://github.com/biubiubiu01/EchartsMap)，欢迎提出建议和bug :smile: 。如果这个项目对你有所帮助，可以给作者买杯咖啡，欢迎投喂，任意金额捐赠加好友问题咨询。
+
+<img src="https://github.com/biubiubiu01/vue3-bigData/blob/master/alipay.png" alt="alipay" width="250"><img src="https://github.com/biubiubiu01/vue3-bigData/blob/master/wechat.png" alt="wechat" width="250">
 
